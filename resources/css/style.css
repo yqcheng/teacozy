@@ -4,31 +4,93 @@
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
+  padding: 0;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+/* header styling */
 .header{
   width: 100%;
+  height: 69px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 69px;
+  margin: 0px;
   border-bottom: 1px solid seashell;
-  position: fixed;
-  z-index: 10;
+  border-top: 5px solid black;
   margin-right: 10px;
+  position: fixed;
+  z-index: 5;
+  padding: 0;
 }
 
 #logo{
   height: 50px;
   margin-left: 10px;
+  border: 1px solid seashell;
 }
 
 nav{
   margin-right: 10px;
   display: flex;
   align-items: center;
+  border: 1px solid seashell;
 }
 
 nav span{
   padding: 0px 10px;
+}
+
+/* main content styling */
+.main{
+  margin-top: 69px;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+
+}
+
+.top{
+  height: 700px;
+  width: 1200px;
+}
+
+
+
+/* Mission styling */
+.mission-text{
+  border: 1px solid seashell;
+  width: 1200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.m-text{
+  border: 1px solid seashell;
+  text-align: center;
+
+  margin: 10px;
+ }
+
+ .m1{
+   font-size: 1.5em;
+ }
+
+.mission{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  height: 700px;
+}
+
+.mission-content{
+  margin: -450px;
 }
