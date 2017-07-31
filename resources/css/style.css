@@ -10,7 +10,10 @@
 body{
   display: flex;
   flex-direction: column;
+  margin: 0;
+
 }
+
 
 /* header styling */
 .header{
@@ -21,7 +24,6 @@ body{
   align-items: center;
   margin: 0px;
   border-bottom: 1px solid seashell;
-  border-top: 5px solid black;
   margin-right: 10px;
   position: fixed;
   z-index: 5;
@@ -31,14 +33,12 @@ body{
 #logo{
   height: 50px;
   margin-left: 10px;
-  border: 1px solid seashell;
 }
 
 nav{
   margin-right: 10px;
   display: flex;
   align-items: center;
-  border: 1px solid seashell;
 }
 
 nav span{
@@ -50,7 +50,8 @@ nav span{
   margin-top: 69px;
   display: flex;
   z-index: 1;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 
@@ -63,7 +64,6 @@ nav span{
 
 /* Mission styling */
 .mission-text{
-  border: 1px solid seashell;
   width: 1200px;
   height: 100px;
   display: flex;
@@ -74,23 +74,80 @@ nav span{
 }
 
 .m-text{
-  border: 1px solid seashell;
   text-align: center;
 
   margin: 10px;
  }
 
  .m1{
-   font-size: 1.5em;
+  font-size: 1.5em;
  }
 
 .mission{
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
   height: 700px;
+  width: 1200px;
 }
 
 .mission-content{
   margin: -450px;
+}
+
+/* feature styling */
+.feature{
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 1000px;
+
+}
+
+.tea-img{
+  width: 300px;
+  height: 200px;
+}
+
+.f-title,
+.f-toprow,
+.f-bottomrow{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.f-toprow{
+  justify-content: space-between;
+}
+
+.f-bottomrow .img-text{
+  padding: 0px 25px;
+}
+
+.f-title{
+  flex-direction: column;
+  margin: 0px;
+}
+
+.f-title h2,
+.f-title h4{
+  text-align: center;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+.f-title h4{
+  margin: 0px;
+}
+
+
+.img-text{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 0px;
+  font-weight: bold;
 }
